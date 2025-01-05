@@ -10,7 +10,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Local frontend
-        "https://<your-netlify-url>",  # Deployed Netlify frontend
+        "https://startling-dodol-1b51d6.netlify.app",  # Deployed Netlify frontend
     ],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, OPTIONS, etc.)
