@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const fetchChatResponse = async (question) => {
   try {
-    const response = await axios.post("http://localhost:8000/ask", { question });
+    const response = await axios.post("https://crustdata-backend.onrender.com/ask", { question });
     return response.data;
   } catch (error) {
     // Handle 404 specifically
